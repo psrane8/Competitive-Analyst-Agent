@@ -1,0 +1,36 @@
+competitive_analysis:
+  description: >
+    Perform a comprehensive competitive analysis of {company_name}.  
+    Evaluate key competitors, their market positioning, strengths, weaknesses, and strategic initiatives.  
+    Analyze industry trends, pricing models, customer sentiment, and technological advancements impacting {company_name}.  
+    Identify potential opportunities, threats, and actionable insights to enhance {company_name}'s competitive advantage.  
+    Utilize data-driven research, benchmarking reports, and industry intelligence to support strategic decision-making.
+  expected_output: >
+        A structured report with 10+ key competitive insights, including competitor strengths and weaknesses, market positioning, pricing strategies, customer sentiment, and potential risks and opportunities.  
+        A SWOT analysis of {company_name} and a competitive benchmarking table comparing {company_name} with key rivals.  
+        Actionable recommendations to enhance {company_name}'s market position and strategic decision-making.  
+  agent: analyst
+ 
+ 
+ 
+reporting_writing:
+  description: >
+    Develop a detailed executive summary report based on the gathered research.  
+    Expand each key insight into a structured section, providing context, analysis, and implications.    
+    Ensure the report is well-organized, concise yet comprehensive, and formatted professionally.  
+    Emphasize clarity and strategic value for We are The Minories (WATM) also known as The Minories.
+  expected_output: >
+    A comprehensive executive summary report with clearly defined sections:
+    - Competitive strengths and weaknesses of {company_name}
+    - Market positioning and competitive landscape
+    - Strategic opportunities and threats identified by the Competitive Analyst
+    - Recommendations for improving competitive positioning
+    - Implications for {company_name}'s strategic goals and decision-making
+  agent: report_writer
+  context:
+    - competitive_analysis
+
+ 
+ 
+ 
+ 
