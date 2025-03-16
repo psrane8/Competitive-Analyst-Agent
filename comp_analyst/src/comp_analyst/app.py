@@ -69,6 +69,7 @@ if company_name and submitted and seper_api_key and gemini_api_key:
            
         status.update(label="✅ Your Report is ready",state="complete", expanded=False)
     st.subheader("Competitive Analysis Report is ready!", anchor=False, divider="rainbow")
+    st.markdown(result)
     report=st.markdown(result)
     # Convert Markdown to PDF
     pdf_buffer = markdown_to_pdf(report)
@@ -82,4 +83,4 @@ if company_name and submitted and seper_api_key and gemini_api_key:
     )
 
 else:
-    st.error("Please make sure to add the company name, Gemini & Serper API key to continue",icon="🚨")
+    st.error("Please make sure to add the company name, corect Gemini & Serper API key to continue",icon="🚨")
