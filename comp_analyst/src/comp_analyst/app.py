@@ -2,8 +2,6 @@ import streamlit as st
 import main
 import sys,re
 import os 
-__import__('pysqlite3') 
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 class StreamToContainer:
     def __init__(self,container):
         self.container=container
