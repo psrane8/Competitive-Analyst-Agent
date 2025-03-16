@@ -2,7 +2,10 @@ import streamlit as st
 import main
 import sys,re
 import os 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e47629899030e95d2a5e8caf3417b7e00dafd88c
 class StreamToContainer:
     def __init__(self,container):
         self.container=container
