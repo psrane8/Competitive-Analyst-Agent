@@ -5,6 +5,9 @@ from datetime import datetime
 from dotenv import load_dotenv
 from crew import CompAnalyst
 
+__import__('pysqlite3') 
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 load_dotenv()
 # This main file is intended to be a way for you to run your
