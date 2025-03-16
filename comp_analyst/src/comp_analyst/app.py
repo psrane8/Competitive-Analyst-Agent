@@ -5,7 +5,7 @@ import streamlit as st
 import main
 import sys,re
 import os 
-from fpdf import FPDF
+
 from io import BytesIO
 
 class StreamToContainer:
@@ -27,16 +27,6 @@ class StreamToContainer:
 
 
 
-# Function to convert Markdown to PDF
-def markdown_to_pdf(markdown_text):
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font('Arial', '', 12)
-    pdf.multi_cell(0, 10, markdown_text)
-    buffer = BytesIO()
-    pdf.output(buffer)
-    buffer.seek(0)
-    return buffer
 
 
 
@@ -70,17 +60,8 @@ if company_name and submitted and seper_api_key and gemini_api_key:
         status.update(label="✅ Your Report is ready",state="complete", expanded=False)
     st.subheader("Competitive Analysis Report is ready!", anchor=False, divider="rainbow")
     st.markdown(result)
-    report=st.markdown(result)
-    # Convert Markdown to PDF
-    pdf_buffer = markdown_to_pdf(report)
 
-# Display the download button
-    st.download_button(
-        label="Download PDF Report",
-        data=pdf_buffer,
-        file_name='report.pdf',
-        mime='application/pdf'
-    )
+
 
 else:
     st.error("Please make sure to add the company name, corect Gemini & Serper API key to continue",icon="🚨")
