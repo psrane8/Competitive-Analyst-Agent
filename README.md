@@ -1,1 +1,0 @@
-# Competitive-Analyst-Agent
