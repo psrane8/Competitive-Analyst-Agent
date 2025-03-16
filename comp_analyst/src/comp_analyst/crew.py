@@ -47,6 +47,7 @@ class CompAnalyst():
 	def reporting_writing(self) -> Task:
 		return Task(
 			config=self.tasks_config['reporting_writing'],
+			output_file='report.md'
 			)
 
 

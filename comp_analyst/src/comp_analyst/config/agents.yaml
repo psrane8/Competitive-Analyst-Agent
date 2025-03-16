@@ -8,7 +8,7 @@ analyst:
     competitive research analysis on different competitor companies and finding ways of being distinct
     among this competitors . Known for your ability to find the most relevant
     information and present it in a clear and concise manner.
-  llm: gemini/gemini-1.5-flash
+  llm: gemini/gemini-2.0-flash
  
 report_writer:
   role: >
@@ -20,4 +20,4 @@ report_writer:
     your ability to turn complex data into clear and concise reports, making
     it easy for others to understand and act on the information you provide. You have a knack
     for creating detailed and insightful executive summary reports.
-  llm: gemini/gemini-1.5-flash
+    

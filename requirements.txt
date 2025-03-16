@@ -1,8 +1,10 @@
 streamlit
 python-dotenv
-crewai
+crewai==0.102.0
 crewai-tools
 langchain
+
+#need to add this for streamlit cloud
 pysqlite3-binary
 databricks
 databricks.sdk

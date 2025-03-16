@@ -1,14 +1,14 @@
 competitive_analysis:
   description: >
-    Perform a comprehensive competitive analysis of {company_name}.  
+    Perform an extensive competitive analysis of {company_name}.  
     Evaluate key competitors, their market positioning, strengths, weaknesses, and strategic initiatives.  
     Analyze industry trends, pricing models, customer sentiment, and technological advancements impacting {company_name}.  
     Identify potential opportunities, threats, and actionable insights to enhance {company_name}'s competitive advantage.  
     Utilize data-driven research, benchmarking reports, and industry intelligence to support strategic decision-making.
   expected_output: >
-        A structured report with 10+ key competitive insights, including competitor strengths and weaknesses, market positioning, pricing strategies, customer sentiment, and potential risks and opportunities.  
-        A SWOT analysis of {company_name} and a competitive benchmarking table comparing {company_name} with key rivals.  
-        Actionable recommendations to enhance {company_name}'s market position and strategic decision-making.  
+        A structured 3 page report with key competitive insights, including competitor strengths and weaknesses, market positioning, pricing strategies, customer sentiment, and potential risks and opportunities.  
+        A SWOT analysis of {company_name} and a competitive benchmarking table comparing The Minories with key rivals.  
+        Actionable recommendations to enhance The Minories's market position and strategic decision-making.  
   agent: analyst
  
  
@@ -20,16 +20,16 @@ reporting_writing:
     Ensure the report is well-organized, concise yet comprehensive, and formatted professionally.  
     Emphasize clarity and strategic value for We are The Minories (WATM) also known as The Minories.
   expected_output: >
-    A comprehensive executive summary report with clearly defined sections:
+    A comprehensive executive summary report of 3 pages with clearly defined sections in markdown format:
     - Competitive strengths and weaknesses of {company_name}
     - Market positioning and competitive landscape
     - Strategic opportunities and threats identified by the Competitive Analyst
     - Recommendations for improving competitive positioning
-    - Implications for {company_name}'s strategic goals and decision-making
+    - Implications for The Minories's strategic goals and decision-making
+    Deliver the report in markdown format.(without '```').
+  output_file: report.md
   agent: report_writer
-  context:
-    - competitive_analysis
-
+  
  
  
  
