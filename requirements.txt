@@ -6,3 +6,4 @@ langchain
 pysqlite3-binary
 databricks
 databricks.sdk
+fpdf
