@@ -57,7 +57,7 @@ if company_name and submitted and seper_api_key and gemini_api_key:
             inputs = {"company_name":company_name}
             result=main.run(inputs)
            
-        status.update(label="✅ Your Report is ready",state="complete", expanded=False)
+    status.update(label="✅ Your Report is ready",state="complete", expanded=False)
     st.subheader("Competitive Analysis Report is ready!", anchor=False, divider="rainbow")
     st.markdown(result)
 
