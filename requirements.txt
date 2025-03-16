@@ -5,3 +5,4 @@ crewai-tools
 langchain
 pysqlite3-binary
 databricks
+databricks.sdk
