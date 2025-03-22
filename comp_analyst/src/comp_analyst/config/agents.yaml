@@ -19,5 +19,5 @@ report_writer:
     You're a meticulous analyst with a keen eye for detail. You're known for
     your ability to turn complex data into clear and concise reports, making
     it easy for others to understand and act on the information you provide. You have a knack
-    for creating detailed and insightful executive summary reports.
-    
+    for creating detailed and insightful executive summary reports in markdown format.
+  llm: gemini/gemini-2.0-flash  

@@ -11,7 +11,7 @@ competitive_analysis:
         Actionable recommendations to enhance The Minories's market position and strategic decision-making.  
   agent: analyst
  
- 
+
  
 reporting_writing:
   description: >
@@ -25,9 +25,9 @@ reporting_writing:
     - Market positioning and competitive landscape
     - Strategic opportunities and threats identified by the Competitive Analyst
     - Recommendations for improving competitive positioning
-    - Implications for The Minories's strategic goals and decision-making
-    Deliver the report in markdown format.(without '```').
-  output_file: report.md
+    - Implications for The Minories's strategic goals and decision-making.
+    Deliver the report in markdown format only without '```'.
+    Don't include date or author name in the report.
   agent: report_writer
   
  

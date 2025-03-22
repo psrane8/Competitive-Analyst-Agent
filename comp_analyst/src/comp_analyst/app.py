@@ -49,12 +49,12 @@ with st.form("form"):
     company_name=st.text_input("Enter the name of the Company",key="company_name")
     submitted=st.form_submit_button("Submit")
 
-result="Run again"
+
 if company_name and submitted and seper_api_key and gemini_api_key:
     with st.status("🤖 **Agents at work...**",expanded=True,state="running") as status:
         with st.container(height=300):
             sys.stdout = StreamToContainer(st)
-            inputs = {"company_name":company_name}
+            inputs={"company_name":company_name}
             result=main.run(inputs)
            
         status.update(label="✅ Your Report is ready",state="complete", expanded=False)

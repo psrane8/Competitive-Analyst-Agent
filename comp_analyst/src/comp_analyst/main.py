@@ -9,7 +9,7 @@ __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
-load_dotenv()
+#load_dotenv()
 # This main file is intended to be a way for you to run your
 # crew locally, so refrain from adding unnecessary logic into this file.
 # Replace with inputs you want to test with, it will automatically
@@ -22,7 +22,7 @@ def run(inputs):
     
     
     try:
-        CompAnalyst().crew().kickoff(inputs=inputs)
+         return CompAnalyst().crew().kickoff(inputs=inputs)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 

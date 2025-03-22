@@ -23,7 +23,8 @@ class CompAnalyst():
 		return Agent(
             tools=[SerperDevTool()],
             config=self.agents_config['analyst'],
-            verbose=True
+            verbose=True,
+			allow_delegation=True
         )
  
  
@@ -31,7 +32,8 @@ class CompAnalyst():
 	def report_writer(self) -> Agent:
 		return Agent(
             config=self.agents_config['report_writer'],
-            verbose=True
+            verbose=True,
+			allow_delegation=True
         )
 
 	# To learn more about structured task outputs, 
@@ -41,13 +43,15 @@ class CompAnalyst():
 	def competitive_analysis(self) -> Task:
 		return Task(
 			config=self.tasks_config['competitive_analysis'],
+			max_retries=5
+			
         )
 	
 	@task
 	def reporting_writing(self) -> Task:
 		return Task(
 			config=self.tasks_config['reporting_writing'],
-			output_file='report.md'
+			max_retries=5
 			)
 
 
